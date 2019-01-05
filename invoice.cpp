@@ -1,5 +1,7 @@
 #include "invoice.cpp"
 
+using namespace std;
+
 void Invoice :: Add(Product p){
 	products.push_back(p);
 }
@@ -10,9 +12,8 @@ void Invoice :: SetDate( int y, int m, int d){
 	day = d;
 }
 
-void Invoice :: SetBuyer( string n, string s){
-	name = n;
-	surname = s;
+void Invoice :: SetBuyer( Client c){
+	buyer=c;
 }
 
 void Invoice :: SetNumber( int n){
@@ -41,4 +42,8 @@ int Invoice :: GetDay(){
 
 int Invoice :: GetNumber(){
 	return number;
+}
+
+Client Invoice :: GetBuyer(){
+	return buyer;
 }

@@ -1,5 +1,7 @@
 #include "product.hpp"
 
+using namespace std;
+
 	void Product :: SetName( string s ){
 		name=s;
 	}

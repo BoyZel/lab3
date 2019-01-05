@@ -1,6 +1,9 @@
 #ifndef _PRODUCT_HPP
 #define _PRODUCT_HPP
 #include <string>
+
+using namespace std;
+
 class Product{
 	private:
 		string name;
