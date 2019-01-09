@@ -7,7 +7,7 @@ class Date{
 		int GetYear();
 		int GetMonth();
 		int GetDay();
-		Date( y=2017, m=8, d=4 );
+		Date( int y = 2017, int m = 8, int d = 4 );
 };
 
 #endif

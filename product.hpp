@@ -18,7 +18,7 @@ class Product{
 		void SetQuantity( int );
 		void SetTax( int );
 		string GetName();
-		double GetPrice()
+		double GetPrice();
 		int GetQuantity();
 		int GetTax();
 		double GetNetto();

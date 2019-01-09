@@ -1,4 +1,4 @@
-#include "invoice.cpp"
+#include "invoice.hpp"
 
 using namespace std;
 
@@ -26,7 +26,7 @@ Product Invoice :: GetProduct( int n ){
 	return products[n];
 }
 
-int Invoice :: GetDate(){
+Date Invoice :: GetDate(){
 	return date;
 }
 

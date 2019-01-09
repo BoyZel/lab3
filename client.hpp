@@ -7,7 +7,7 @@ class Client{
 	private:
 		string name, surname;
 		string city;
-		string street
+		string street;
 		int house;
 	public:
 		Client( string n = "Pablo", string s = "Escobar", string c = "Bogota", string st = "Noakowskiego", int h=16 );
@@ -22,3 +22,4 @@ class Client{
 		string GetStreet();
 		int GetHouse();
 };
+#endif

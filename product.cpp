@@ -37,7 +37,7 @@ using namespace std;
 		return quantity;
 	}
 
-	double Product :: GetTax(){
+	int Product :: GetTax(){
 		return tax;
 	}
 
@@ -50,5 +50,6 @@ using namespace std;
 	}
 
 	double Product :: GetTotal(){
-		return price * quantity * (1 + tax/100);
+		double x = tax /100;
+		return price * quantity * (1 + x);
 	}

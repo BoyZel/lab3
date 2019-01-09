@@ -2,6 +2,8 @@
 #define _INVOICE_HPP
 #include <vector>
 #include "product.hpp"
+#include "date.hpp"
+#include "client.hpp"
 
 using namespace std;
 
@@ -23,4 +25,4 @@ public:
 	int GetNumber();
 	Client GetBuyer();
 };
-
+#endif

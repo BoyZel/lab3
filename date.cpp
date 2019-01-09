@@ -1,6 +1,6 @@
-#include "mockdate.hpp"
+#include "date.hpp"
 
-Date :: Date( y, m, d ){
+Date :: Date( int y, int m, int d ){
 	year=y;
 	month=m;
 	day=d;
