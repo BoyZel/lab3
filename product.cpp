@@ -1,6 +1,13 @@
 #include "product.hpp"
 
 using namespace std;
+	
+	Product :: Product(string n, double p, int q, int t){
+		name=n;
+		price=p;
+		quantity=q;
+		tax=t;
+	}
 
 	void Product :: SetName( string s ){
 		name=s;

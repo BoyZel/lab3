@@ -1,6 +1,14 @@
 #include "client.hpp"
 using namespace std;
 
+Client :: Client( string n, string s, string c, string st, int h){
+	name=n;
+	surname=s;
+	city=c;
+	street=st;
+	house=h;
+}
+
 void Client :: SetName( string s){
 	name=s;
 }

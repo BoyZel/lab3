@@ -8,19 +8,18 @@ using namespace std;
 class Invoice{
 private:
 	vector < Product > products;
-	int year, month, day;
+	Date date;
 	Client buyer;
 	int number;
 public:
 	void Add( Product );
-	void SetDate( int, int, int);
+	void SetDate( Date );
 	void SetBuyer( Client );
 	void SetNumber( int );
+
 	int HowMany();
 	Product GetProduct ( int );
-	int GetYear();
-	int GetMonth();
-	int GetDay();
+	Date GetDate();
 	int GetNumber();
 	Client GetBuyer();
 };

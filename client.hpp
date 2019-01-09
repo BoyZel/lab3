@@ -10,6 +10,7 @@ class Client{
 		string street
 		int house;
 	public:
+		Client( string n = "Pablo", string s = "Escobar", string c = "Bogota", string st = "Noakowskiego", int h=16 );
 		void SetName( string );
 		void SetSurname( string );
 		void SetCity( string );

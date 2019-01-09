@@ -12,6 +12,7 @@ class Product{
 		int tax;
 
 	public:
+		Product (string n = "def", double p = 111.1, int q = 0, int t=23); 
 		void SetName( string );
 		void SetPrice( double );
 		void SetQuantity( int );

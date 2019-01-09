@@ -6,10 +6,8 @@ void Invoice :: Add(Product p){
 	products.push_back(p);
 }
 
-void Invoice :: SetDate( int y, int m, int d){
-	year = y;
-	month = m;
-	day = d;
+void Invoice :: SetDate( Date d){
+	date=d;
 }
 
 void Invoice :: SetBuyer( Client c){
@@ -28,16 +26,8 @@ Product Invoice :: GetProduct( int n ){
 	return products[n];
 }
 
-int Invoice :: GetYear(){
-	return year;
-}
-
-int Invoice :: GetMonth(){
-	return month;
-}
-
-int Invoice :: GetDay(){
-	return day;
+int Invoice :: GetDate(){
+	return date;
 }
 
 int Invoice :: GetNumber(){
