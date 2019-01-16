@@ -3,7 +3,8 @@
 #include <vector>
 #include "product.hpp"
 #include "date.hpp"
-#include "client.hpp"
+#include "company.hpp"
+#include "person.hpp"
 
 using namespace std;
 
@@ -11,18 +12,18 @@ class Invoice{
 private:
 	vector < Product > products;
 	Date date;
-	Client buyer;
+	Client *buyer;
 	int number;
 public:
 	void Add( Product );
 	void SetDate( Date );
-	void SetBuyer( Client );
+	void SetBuyer( Client * );
 	void SetNumber( int );
 
 	int HowMany();
 	Product GetProduct ( int );
 	Date GetDate();
 	int GetNumber();
-	Client GetBuyer();
+	Client * GetBuyer();
 };
 #endif

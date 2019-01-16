@@ -1,9 +1,8 @@
 #include "client.hpp"
 using namespace std;
 
-Client :: Client( string n, string s, string c, string st, int h){
+Client :: Client( string n, string c, string st, int h){
 	name=n;
-	surname=s;
 	city=c;
 	street=st;
 	house=h;
@@ -11,10 +10,6 @@ Client :: Client( string n, string s, string c, string st, int h){
 
 void Client :: SetName( string s){
 	name=s;
-}
-
-void Client :: SetSurname( string s){
-	surname=s;
 }
 
 void Client :: SetCity( string s){
@@ -31,10 +26,6 @@ void Client :: SetHouse( int s){
 
 string Client :: GetName(){
 	return name;
-}
-
-string Client :: GetSurname(){
-	return surname;
 }
 
 string Client :: GetCity(){

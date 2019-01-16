@@ -10,7 +10,7 @@ void Invoice :: SetDate( Date d){
 	date=d;
 }
 
-void Invoice :: SetBuyer( Client c){
+void Invoice :: SetBuyer( Client *c){
 	buyer=c;
 }
 
@@ -34,6 +34,6 @@ int Invoice :: GetNumber(){
 	return number;
 }
 
-Client Invoice :: GetBuyer(){
+Client* Invoice :: GetBuyer(){
 	return buyer;
 }

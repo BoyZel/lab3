@@ -6,17 +6,19 @@
 		Product computer( "Lenovo X35", 2999.99, 13, 9 );
 		Product phone( "LG G15", 949.99, 11, 9);
 		Date today;
-		Client pablo;
+		Company pablo;
+		Client *customer;
+		customer = &pablo;
 		Invoice first;
 		first.Add( computer );
 		first.Add( phone );
-		first.SetBuyer( pablo );
+		first.SetBuyer( customer );
 		first.SetDate( today );
 		first.SetNumber( 123012 );
 		Product p1 = first.GetProduct(0);
 		Product p2 = first.GetProduct(1);
 		Date d = first.GetDate();
-		Client c = first.GetBuyer();
+		Client *c = first.GetBuyer();
 
 	SECTION( "Did other classes send proper values to class Invoice"){
 		REQUIRE( first.HowMany() == 2 );
@@ -37,10 +39,10 @@
 	}
 	
 	SECTION( "Class Client" ){
-		REQUIRE( c.GetName() == "Pablo");
-		REQUIRE( c.GetSurname() == "Escobar");
-		REQUIRE( c.GetCity() == "Bogota");
-		REQUIRE( c.GetHouse() == 16);
+		REQUIRE( c->GetName() == "Polfarma");
+		REQUIRE( c->GetNip() == 100);
+		REQUIRE( c->GetCity() == "Warsaw");
+		REQUIRE( c->GetHouse() == 16);
 	}
 	SECTION( "Taxes" ){
 		int tmp = p1.GetNetto() - 38999.87;
