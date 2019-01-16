@@ -40,7 +40,7 @@
 	
 	SECTION( "Class Client" ){
 		REQUIRE( c->GetName() == "Polfarma");
-		REQUIRE( c->GetNip() == 100);
+		REQUIRE( c->GetUnique() == "1661");
 		REQUIRE( c->GetCity() == "Warsaw");
 		REQUIRE( c->GetHouse() == 16);
 	}

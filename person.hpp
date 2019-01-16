@@ -8,8 +8,11 @@ class Person :public Client {
 	private:
 		string surname;
 	public:
-		void SetSurname( string );
-		string GetSurname();
+		void SetUnique( string );
+		string GetUnique();
+		Person( string n = "Pablo" , string c = "Warsaw" , string st = "Noakowskiego" , int h = 16, string ni="Escobar")
+			: Client( n,c,st,h ), surname(ni)
+			{}
 };
 
 #endif

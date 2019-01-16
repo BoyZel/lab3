@@ -5,15 +5,12 @@ using namespace std;
 
 class Company : public Client{
 	private:
-		int nip;
-		int regon;
+		string nip;
 	public:
-		void SetNip( int );
-		void SetRegon( int );
-		virtual int GetNip();
-		virtual int GetRegon();
-		Company( string n = "Polfarma" , string c = "Warsaw" , string st = "Noakowskiego" , int h = 16, int ni=100, int r=200)
-			: Client( n,c,st,h ), nip(ni), regon(r)
+		virtual void SetUnique( string );
+		virtual string GetUnique();
+		Company( string n = "Polfarma" , string c = "Warsaw" , string st = "Noakowskiego" , int h = 16, string ni="1661")
+			: Client( n,c,st,h ), nip(ni)
 		{ }
 };
 #endif

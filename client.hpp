@@ -19,11 +19,7 @@ class Client{
 		string GetCity();
 		string GetStreet();
 		int GetHouse();
-		virtual void SetNip(int) = 0;
-		virtual void SetRegon(int) = 0;
-		virtual int GetNip() = 0;
-		virtual int GetRegon() = 0;
-		virtual void SetSurname(string) = 0;
-		virtual string GetSurname() = 0;
+		virtual void SetUnique(string) = 0;
+		virtual string GetUnique() = 0;
 };
 #endif

@@ -1,17 +1,9 @@
 #include "company.hpp"
 
-void Company :: SetNip( int n ){
+void Company :: SetUnique( string  n ){
 	nip=n;
 }
 
-void Company :: SetRegon( int n ){
-	regon=n;
-}
-
-int Company :: GetNip(){
+string Company :: GetUnique(){
 	return nip;
-}
-
-int Company :: GetRegon(){
-	return regon;
 }

@@ -1,10 +1,10 @@
 #include "person.hpp"
 using namespace std;
 
-void Person :: SetSurname( string s){
+void Person :: SetUnique( string s){
 	surname=s;
 }
 
-string Person :: GetSurname(){
+string Person :: GetUnique(){
 	return surname;
 }
