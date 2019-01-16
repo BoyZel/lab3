@@ -25,5 +25,11 @@ public:
 	Date GetDate();
 	int GetNumber();
 	Client * GetBuyer();
+
+	bool operator<( Invoice const& r ){
+		if(r.number < this->number)
+			return false;
+		return true;
+	}
 };
 #endif

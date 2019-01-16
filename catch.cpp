@@ -53,3 +53,5 @@
 		REQUIRE( tmp >= -0.01 );
 	}
 }
+TEST_CASE( "Does manager work correct"){
+}
